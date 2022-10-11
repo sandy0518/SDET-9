@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-11T13:32:02 IST" name="Default suite" finished-at="2022-10-11T13:32:03 IST" duration-ms="85">
+    <groups>
+    </groups>
+    <test started-at="2022-10-11T13:32:02 IST" name="Default test" finished-at="2022-10-11T13:32:03 IST" duration-ms="85">
+      <class name="testNG1.Sample1">
+        <test-method is-config="true" signature="bS()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:02 IST" name="bS" finished-at="2022-10-11T13:32:02 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bS -->
+        <test-method is-config="true" signature="bT()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="bT" finished-at="2022-10-11T13:32:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bT -->
+        <test-method is-config="true" signature="bC()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="bC" finished-at="2022-10-11T13:32:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bC -->
+        <test-method is-config="true" signature="bM()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="bM" finished-at="2022-10-11T13:32:03 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bM -->
+        <test-method signature="A()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="A" finished-at="2022-10-11T13:32:03 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="aM()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="aM" finished-at="2022-10-11T13:32:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aM -->
+        <test-method is-config="true" signature="bM()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="bM" finished-at="2022-10-11T13:32:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bM -->
+        <test-method signature="a()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="a" finished-at="2022-10-11T13:32:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method is-config="true" signature="aM()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="aM" finished-at="2022-10-11T13:32:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aM -->
+        <test-method is-config="true" signature="aC()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="aC" finished-at="2022-10-11T13:32:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aC -->
+        <test-method is-config="true" signature="aT()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="aT" finished-at="2022-10-11T13:32:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aT -->
+        <test-method is-config="true" signature="aS()[pri:0, instance:testNG1.Sample1@1ed4ae0f]" started-at="2022-10-11T13:32:03 IST" name="aS" finished-at="2022-10-11T13:32:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aS -->
+      </class> <!-- testNG1.Sample1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
