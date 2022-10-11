@@ -52,21 +52,12 @@ public class CreateContactWithOrgNameTest {
 		ConPageClass cpc=new ConPageClass(driver);
 		cpc.clickonPB();
 
-//		WebElement fNameDD = driver.findElement(By.name("salutationtype"));
-//		wdu.selectByValue(fNameDD, fNameType);
-		
 		NewConPageClass ncp=new NewConPageClass(driver);
-		ncp.fNDD(null, orgName);
-		
-		WebElement fNameTF = driver.findElement(By.name("firstname"));
-		fNameTF.sendKeys(fName);
-		
-		WebElement lNameTF = driver.findElement(By.name("lastname"));
-		lNameTF.sendKeys(lName);
-		
-		WebElement addOrgButton = driver.findElement(By.xpath("//img[@src='themes/softed/images/select.gif']"));
-		addOrgButton.click();
-		
+		ncp.fNDD(fNameType);
+		ncp.fandLastName(fName, lName);
+
+		ncp.getOrgButton().click();
+
 		String parentWindow = wdu.getParentHandle();
 		wdu.allHandles(parentWindow);
 		

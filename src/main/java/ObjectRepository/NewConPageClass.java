@@ -7,7 +7,12 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import genericUtility.WebDriverUtility;
+
 public class NewConPageClass {
+	WebDriver driver;
+	public WebDriverUtility wDU=new WebDriverUtility(driver); 
+	
 	@FindBy(name = "salutationtype")
 	private WebElement fNType;
 	
@@ -17,10 +22,10 @@ public class NewConPageClass {
 	@FindBy(name = "lastname")
 	private WebElement lNTF;
 	
-	@FindBy(name = "//img[@src='themes/softed/images/select.gif']")
+	@FindBy(xpath = "//img[@src='themes/softed/images/select.gif']")
 	private WebElement orgButton;
 	
-	@FindBy(className ="crmButton small save")
+	@FindBy(xpath ="xpath=\"//input[@class='crmButton small save']")
 	private WebElement saveButton;
 	
 	public NewConPageClass(WebDriver driver) {
@@ -47,13 +52,16 @@ public class NewConPageClass {
 		return saveButton;
 	}
 	
-	public void fNDD(WebElement ele, String value) {
-		Select select = new Select(ele);
-		select.selectByValue(value);
+	public void fNDD(String value) {
+		wDU.selectByValue(fNType, value);
 	}
 	
-	public void fAndLName(String firstName, String lastName) {
-		fNTF.sendKeys(firstName);
-		lNTF.sendKeys(lastName);
+	public void fandLastName(String value1, String value2) {
+		fNTF.sendKeys(value1);
+		lNTF.sendKeys(value2);
+	}
+	
+	public void saveButton() {
+		saveButton.click();
 	}
 }
