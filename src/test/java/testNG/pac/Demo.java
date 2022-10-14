@@ -1,25 +1,24 @@
 package testNG.pac;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Demo 
+public class Demo  extends Annotations
 
 {
 
-	@Test(dependsOnMethods = "test4", priority=-1)
+	@Test()
 	public void test2() {
-		System.out.println("test 2 done");
+		System.out.println("12");
 	}
 
-	@Test(priority = 2)
+	@Test(groups = "regression")
 	public void test4() {
-		System.out.println("test 4 done");
-		Assert.assertEquals(false, false);
+		System.out.println("regressiuon");
+		
 	}
-//	@Test()
-//	public void test3() {
-//		System.out.println("test 3 done");
-//
-//	}
+	@Test(groups = "integration")
+	public void test3() {
+		System.out.println("integration");
+
+	}
 }
