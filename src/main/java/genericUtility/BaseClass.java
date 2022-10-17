@@ -2,12 +2,14 @@ package genericUtility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import ObjectRepository.HomePageClass;
 import ObjectRepository.LoginPageClass;
@@ -33,11 +35,24 @@ public class BaseClass
 	 * Launch the browser
 	 */
 
+	@Parameters("BROWSER")
 	@BeforeClass(groups = {"smoke","regression","integration"})
-	public void launchBrowser() throws Throwable 
+	public void launchBrowser(String browser) throws Throwable 
 	{
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
+		if(browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
+		}
+		else if(browser.equals("firefox"))
+		{
+			WebDriverManager.firefoxdriver().setup();
+			driver=new FirefoxDriver();
+		}
+		else
+		{
+			System.out.println("Invalid Input");
+		}
+
 		sdriver=driver;
 		WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 		webDriverUtility.maximize();
