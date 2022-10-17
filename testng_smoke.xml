@@ -6,11 +6,18 @@
 			<include name="smoke"></include>
 		</run>
 	</groups>
+	<listeners>
+		<listener class-name="genericUtility.ListnersImplementation"></listener>
+	</listeners>
 
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="testNG.pac.Sample" />
-			<class name="testNG.pac.Demo" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateOrganisationTest" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

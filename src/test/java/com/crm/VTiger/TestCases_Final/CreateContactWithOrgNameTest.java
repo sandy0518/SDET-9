@@ -13,7 +13,7 @@ import genericUtility.WebDriverUtility;
 
 public class CreateContactWithOrgNameTest extends BaseClass {
 
-	@Test
+	@Test(groups = "regression")
 	public void createContactWithOrg() throws Throwable 
 	{
 		ExcelFileUtility eFU=new ExcelFileUtility();

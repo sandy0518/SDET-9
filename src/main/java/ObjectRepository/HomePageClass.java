@@ -6,8 +6,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import genericUtility.WebDriverUtility;
-
 public class HomePageClass 
 {
 	WebDriver driver;
@@ -47,7 +45,7 @@ public class HomePageClass
 
 	public void signOut(WebDriver driver) {
 		Actions action =new Actions(driver);
-		action.moveToElement(adminImg).perform();
+		action.moveToElement(adminImg).build().perform();;
 		SOButton.click();
 	}
 }

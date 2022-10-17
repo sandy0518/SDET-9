@@ -19,13 +19,12 @@ public class BaseClass
 	public static WebDriver sdriver;
 	PropertyFileUtility propertyFileUtility = new PropertyFileUtility();
 
-
-	@BeforeSuite
+	@BeforeSuite(groups = {"smoke","regression","integration"})
 	public void dataBaseConnection() {
 		System.out.println("===Connected to Database===");
 	}
 
-	@AfterSuite
+	@AfterSuite(groups = {"smoke","regression","integration"})
 	public void disConnectDatavbase() {
 		System.out.println("===Dis Connected===");
 	}
@@ -34,23 +33,24 @@ public class BaseClass
 	 * Launch the browser
 	 */
 
-	@BeforeClass
+	@BeforeClass(groups = {"smoke","regression","integration"})
 	public void launchBrowser() throws Throwable 
 	{
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
+		sdriver=driver;
 		WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 		webDriverUtility.maximize();
 		driver.get(propertyFileUtility.readDataFromPropertyFile("url"));
 		webDriverUtility.implicitlyWait();
 	}
 
-	@AfterClass
+	@AfterClass(groups = {"smoke","regression","integration"})
 	public void closeBrowser() {
 		driver.close();
 	}
 
-	@BeforeMethod 
+	@BeforeMethod (groups = {"smoke","regression","integration"})
 	public void logintoApp() throws Throwable {
 
 
@@ -60,7 +60,7 @@ public class BaseClass
 		LoginPageClass lpc=new LoginPageClass(driver);
 		lpc.login(uName, pWD);
 	}
-	@AfterMethod
+	@AfterMethod(groups = {"smoke","regression","integration"})
 	public void logoutfromApp() 
 	{
 		HomePageClass homePageClass = new HomePageClass(driver);
