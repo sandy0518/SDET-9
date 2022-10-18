@@ -1,28 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+=======
 <testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2022-10-14T14:41:53 IST" name="Default suite" finished-at="2022-10-14T14:41:54 IST" duration-ms="1821">
+=======
   <suite started-at="2022-10-17T17:39:04 IST" name="Suite" finished-at="2022-10-17T17:40:10 IST" duration-ms="65552">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
     <groups>
       <group name="smoke">
         <method signature="CreateOrganisationTest.createOrgTest()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" name="createOrgTest" class="com.crm.VTiger.TestCases_Final.CreateOrganisationTest"/>
       </group> <!-- smoke -->
     </groups>
+<<<<<<< HEAD
+    <test started-at="2022-10-14T14:41:53 IST" name="Default test" finished-at="2022-10-14T14:41:54 IST" duration-ms="1821">
+      <class name="testNG1.ExcelDataProvider">
+        <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+=======
     <test started-at="2022-10-17T17:39:04 IST" name="Test" finished-at="2022-10-17T17:40:10 IST" duration-ms="65552">
       <class name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest">
         <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@3513c84c]" started-at="2022-10-17T17:39:04 IST" name="dataBaseConnection" finished-at="2022-10-17T17:39:04 IST" duration-ms="77" status="PASS">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- getCre -->
+        <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pavan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+=======
         </test-method> <!-- dataBaseConnection -->
         <test-method is-config="true" signature="disConnectDatavbase()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@3513c84c]" started-at="2022-10-17T17:40:10 IST" name="disConnectDatavbase" finished-at="2022-10-17T17:40:10 IST" duration-ms="1" status="PASS">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- getCre -->
+        <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sandeep]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+          </params>
+=======
         </test-method> <!-- disConnectDatavbase -->
       </class> <!-- com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest -->
       <class name="com.crm.VTiger.TestCases_Final.CreateOrganisationTest">
         <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:39:04 IST" name="launchBrowser" finished-at="2022-10-17T17:39:15 IST" duration-ms="10443" status="PASS">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- getCre -->
+        <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[soumya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[s1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCre -->
+      </class> <!-- testNG1.ExcelDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+=======
         </test-method> <!-- launchBrowser -->
         <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:39:15 IST" name="logintoApp" finished-at="2022-10-17T17:39:23 IST" duration-ms="7742" status="PASS">
           <reporter-output>
@@ -121,4 +203,5 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.crm.VTiger.TestCases_Final.CreateOrganisationTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
 </testng-results>
