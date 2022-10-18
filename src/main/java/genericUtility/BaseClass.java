@@ -9,7 +9,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 
 import ObjectRepository.HomePageClass;
 import ObjectRepository.LoginPageClass;
@@ -35,10 +34,11 @@ public class BaseClass
 	 * Launch the browser
 	 */
 
-	@Parameters("BROWSER")
+//	@Parameters("BROWSER")
 	@BeforeClass(groups = {"smoke","regression","integration"})
-	public void launchBrowser(String browser) throws Throwable 
+	public void launchBrowser() throws Throwable 
 	{
+		String browser = propertyFileUtility.readDataFromPropertyFile("browser");
 		if(browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
