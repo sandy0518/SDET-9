@@ -18,4 +18,11 @@ public class ExcelFileUtility {
 		String value = cn.getStringCellValue();
 		return value;
 	}
+
+	public int getLastRowCount(String sheetNum) throws Throwable {
+		FileInputStream fis=new FileInputStream("./CommonData/OrgTestData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis);
+		int sn = wb.getSheet(sheetNum).getLastRowNum();
+		return sn;
+	}
 }
