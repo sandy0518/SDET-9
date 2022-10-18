@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+
+	<test name="chrome" parallel="classes" thread-count="3">
+		<parameter name="BROWSER" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateOrganisationTest" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="firefox" parallel="classes" thread-count="3">
+		<parameter name="BROWSER" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateOrganisationTest" />
+			<class
+				name="com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

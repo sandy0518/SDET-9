@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+=======
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-10-14T14:41:53 IST" name="Default suite" finished-at="2022-10-14T14:41:54 IST" duration-ms="1821">
+=======
+  <suite started-at="2022-10-17T17:39:04 IST" name="Suite" finished-at="2022-10-17T17:40:10 IST" duration-ms="65552">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
     <groups>
+      <group name="smoke">
+        <method signature="CreateOrganisationTest.createOrgTest()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" name="createOrgTest" class="com.crm.VTiger.TestCases_Final.CreateOrganisationTest"/>
+      </group> <!-- smoke -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2022-10-14T14:41:53 IST" name="Default test" finished-at="2022-10-14T14:41:54 IST" duration-ms="1821">
       <class name="testNG1.ExcelDataProvider">
         <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="13" status="PASS">
@@ -20,8 +32,14 @@
               </value>
             </param>
           </params>
+=======
+    <test started-at="2022-10-17T17:39:04 IST" name="Test" finished-at="2022-10-17T17:40:10 IST" duration-ms="65552">
+      <class name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest">
+        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@3513c84c]" started-at="2022-10-17T17:39:04 IST" name="dataBaseConnection" finished-at="2022-10-17T17:39:04 IST" duration-ms="77" status="PASS">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getCre -->
         <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="3" status="PASS">
           <params>
@@ -36,8 +54,13 @@
               </value>
             </param>
           </params>
+=======
+        </test-method> <!-- dataBaseConnection -->
+        <test-method is-config="true" signature="disConnectDatavbase()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@3513c84c]" started-at="2022-10-17T17:40:10 IST" name="disConnectDatavbase" finished-at="2022-10-17T17:40:10 IST" duration-ms="1" status="PASS">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getCre -->
         <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="2" status="PASS">
           <params>
@@ -52,8 +75,15 @@
               </value>
             </param>
           </params>
+=======
+        </test-method> <!-- disConnectDatavbase -->
+      </class> <!-- com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest -->
+      <class name="com.crm.VTiger.TestCases_Final.CreateOrganisationTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:39:04 IST" name="launchBrowser" finished-at="2022-10-17T17:39:15 IST" duration-ms="10443" status="PASS">
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getCre -->
         <test-method signature="getCre(java.lang.String,java.lang.String)[pri:0, instance:testNG1.ExcelDataProvider@60bd273d]" started-at="2022-10-14T14:41:54 IST" name="getCre" data-provider="getDataFromExcel" finished-at="2022-10-14T14:41:54 IST" duration-ms="4" status="PASS">
           <params>
@@ -74,4 +104,104 @@
       </class> <!-- testNG1.ExcelDataProvider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:39:15 IST" name="logintoApp" finished-at="2022-10-17T17:39:23 IST" duration-ms="7742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApp -->
+        <test-method signature="createOrgTest()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:39:23 IST" name="createOrgTest" finished-at="2022-10-17T17:39:43 IST" duration-ms="20108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="logoutfromApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:39:43 IST" name="logoutfromApp" finished-at="2022-10-17T17:40:10 IST" duration-ms="27052" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'TYSS-PAVAN', ip: '192.168.60.191', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c347c05a71df53712c74f1eb93cc407c, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Pavan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56245/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c347c05a71df53712c74f1eb93cc407c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'TYSS-PAVAN', ip: '192.168.60.191', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c347c05a71df53712c74f1eb93cc407c, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Pavan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56245}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56245/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c347c05a71df53712c74f1eb93cc407c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy22.click(Unknown Source)
+at ObjectRepository.HomePageClass.signOut(HomePageClass.java:51)
+at genericUtility.BaseClass.logoutfromApp(BaseClass.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@47248a48]" started-at="2022-10-17T17:40:10 IST" name="closeBrowser" finished-at="2022-10-17T17:40:10 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.VTiger.TestCases_Final.CreateOrganisationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
 </testng-results>

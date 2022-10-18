@@ -10,27 +10,27 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 public class Annotations {
-	@BeforeSuite
+	@BeforeSuite(groups="smoke")
 	public void bs() {
 		System.out.println("@BeforeSuite");
 
 	}
 
-	@AfterSuite
+	@AfterSuite(groups="smoke")
 	public void as() {
 		System.out.println("@AfterSuite");
 	}
 
-	@BeforeTest
+	@BeforeTest(groups="regression")
 	public void bt() {
 		System.out.println("@BeforeTest");
 	}
 
-	@AfterTest
+	@AfterTest(groups="regression")
 	public void at() {
 		System.out.println("@AfterTest");
 	}
-	@BeforeClass
+	@BeforeClass(groups="integration")
 	public void bc() {
 		System.out.println("@BeforeClass");
 	}
@@ -40,12 +40,12 @@ public class Annotations {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups= {"smoke","integration","regression"})
 	public void bm() {
 		System.out.println("@BeforeMethod");
 	}
 
-	@AfterMethod
+	@AfterMethod(groups= {"smoke","integration","regression"})
 	public void am() {
 		System.out.println("@AfterMethod");
 	}

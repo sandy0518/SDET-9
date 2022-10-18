@@ -21,6 +21,8 @@ public class Excel_dataProvider
 		ExcelFileUtility excelFileUtility = new ExcelFileUtility();
 
 		for (int i = 0; i <= excelFileUtility.getLastRowCount("Sheet2"); i++) 
+
+		for (int j = 0; j <= excelFileUtility.getLastRowcount("Sheet2"); j++) 
 		{
 			arr[i][0]=excelFileUtility.readDataFromExcelFile("Sheet2", i, 0);
 			arr[i][1]	=excelFileUtility.readDataFromExcelFile("Sheet2", i, 1);

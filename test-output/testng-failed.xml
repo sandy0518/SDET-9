@@ -3,11 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="testNG1.ExcelDataProvider">
         <methods>
           <include name="getCre"/>
         </methods>
       </class> <!-- testNG1.ExcelDataProvider -->
+=======
+      <class name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="createContactWithOrg"/>
+          <include name="disConnectDatavbase"/>
+          <include name="closeBrowser"/>
+          <include name="logintoApp"/>
+          <include name="logoutfromApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest -->
+>>>>>>> branch 'master' of https://github.com/sandy0518/SDET-9.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
