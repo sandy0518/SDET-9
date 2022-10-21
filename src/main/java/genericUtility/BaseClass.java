@@ -76,7 +76,7 @@ public class BaseClass
 		lpc.login(uName, pWD);
 	}
 	@AfterMethod(groups = {"smoke","regression","integration"})
-	public void logoutfromApp() 
+	public void logoutfromApp() throws InterruptedException 
 	{
 		HomePageClass homePageClass = new HomePageClass(driver);
 		homePageClass.signOut(driver);

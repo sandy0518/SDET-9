@@ -24,7 +24,7 @@ public class HomePageClass
 	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
 
-	@FindBy(linkText = "Sign Out")
+	@FindBy(xpath = "//a[text()='Sign Out']")
 	private WebElement SOButton;
 
 	public WebElement getOrgButton() {
@@ -43,9 +43,11 @@ public class HomePageClass
 		return SOButton;
 	}
 
-	public void signOut(WebDriver driver) {
+	public void signOut(WebDriver driver) throws InterruptedException {
 		Actions action =new Actions(driver);
+		
 		action.moveToElement(adminImg).build().perform();;
+		Thread.sleep(2000);
 		SOButton.click();
 	}
 }
