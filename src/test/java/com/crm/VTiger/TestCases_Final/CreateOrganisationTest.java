@@ -15,7 +15,7 @@ public class CreateOrganisationTest extends BaseClass{
 	public void createOrgTest() throws Throwable{
 
 		ExcelFileUtility efu=new ExcelFileUtility();
-		String orgName = efu.readDataFromExcelFile("sheet1", 1, 1)+JavaUtility.generateRanNum();
+		String orgName = "SDET09"+JavaUtility.generateRanNum();
 
 		HomePageClass hpc=new HomePageClass(driver);
 		hpc.getOrgButton().click();
