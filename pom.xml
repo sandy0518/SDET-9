@@ -18,7 +18,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -62,6 +62,13 @@
 			<version>5.2.3</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -83,7 +90,7 @@
 				</plugins>
 			</build>
 		</profile>
-		
+
 		<profile>
 			<id>regression</id>
 			<build>
@@ -101,9 +108,9 @@
 				</plugins>
 			</build>
 		</profile>
-	
-	
-	<profile>
+
+
+		<profile>
 			<id>parallel</id>
 			<build>
 				<plugins>
@@ -120,7 +127,7 @@
 				</plugins>
 			</build>
 		</profile>
-	
+
 	</profiles>
 
 
