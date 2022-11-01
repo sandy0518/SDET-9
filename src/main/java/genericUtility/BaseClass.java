@@ -1,5 +1,10 @@
 package genericUtility;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,6 +14,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
+import com.google.common.io.Files;
 
 import ObjectRepository.HomePageClass;
 import ObjectRepository.LoginPageClass;
@@ -34,7 +41,7 @@ public class BaseClass
 	 * Launch the browser
 	 */
 
-//	@Parameters("BROWSER")
+	//	@Parameters("BROWSER")
 	@BeforeClass(groups = {"smoke","regression","integration"})
 	public void launchBrowser() throws Throwable 
 	{
@@ -81,6 +88,23 @@ public class BaseClass
 		HomePageClass homePageClass = new HomePageClass(driver);
 		homePageClass.signOut(driver);
 
+	}
+
+	public static String takescreenshot(String name) 
+	{
+		TakesScreenshot ts = (TakesScreenshot)BaseClass.sdriver;
+		File src=ts.getScreenshotAs(OutputType.FILE);
+
+		String path = "./Screenshot/"+name+".PNG";
+
+		File dest = new File(path);
+		try {
+			Files.copy(src, dest);
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		return path;
 	}
 
 }

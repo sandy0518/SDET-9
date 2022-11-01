@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-01T12:46:37 IST" name="Default suite" finished-at="2022-11-01T12:46:41 IST" duration-ms="3890">
+  <suite started-at="2022-11-01T16:16:55 IST" name="Suite" finished-at="2022-11-01T16:19:24 IST" duration-ms="149757">
     <groups>
+      <group name="regression">
+        <method signature="CreateContactWithOrgNameTest.createContactWithOrg()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" name="createContactWithOrg" class="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest"/>
+      </group> <!-- regression -->
+      <group name="integration">
+        <method signature="CreateOrganisationWithIndTypeTest.creteOrgwithDD()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest@305ffe9e]" name="creteOrgwithDD" class="com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest"/>
+      </group> <!-- integration -->
+      <group name="smoke">
+        <method signature="CreateOrganisationTest.createOrgTest()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@514646ef]" name="createOrgTest" class="com.crm.VTiger.TestCases_Final.CreateOrganisationTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-11-01T12:46:37 IST" name="Default test" finished-at="2022-11-01T12:46:41 IST" duration-ms="3890">
-      <class name="testNG.pac.Report_Extent">
-        <test-method signature="createReport()[pri:0, instance:testNG.pac.Report_Extent@24569dba]" started-at="2022-11-01T12:46:37 IST" name="createReport" finished-at="2022-11-01T12:46:41 IST" duration-ms="3848" status="FAIL">
+    <test started-at="2022-11-01T16:16:55 IST" name="Test" finished-at="2022-11-01T16:19:24 IST" duration-ms="149757">
+      <class name="com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest@305ffe9e]" started-at="2022-11-01T16:18:37 IST" name="launchBrowser" finished-at="2022-11-01T16:18:42 IST" duration-ms="4507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest@305ffe9e]" started-at="2022-11-01T16:18:42 IST" name="logintoApp" finished-at="2022-11-01T16:18:49 IST" duration-ms="7678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApp -->
+        <test-method signature="creteOrgwithDD()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest@305ffe9e]" started-at="2022-11-01T16:18:49 IST" name="creteOrgwithDD" finished-at="2022-11-01T16:19:18 IST" duration-ms="28659" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[expected [[ ACC96 ] Testyantra Organisation653 - Organization Information] but found [Testyantra Organisation653]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+              <![CDATA[java.lang.AssertionError: expected [[ ACC96 ] Testyantra Organisation653 - Organization Information] but found [Testyantra Organisation653]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:976)
-at org.testng.Assert.assertEquals(Assert.java:1010)
-at testNG.pac.Report_Extent.createReport(Report_Extent.java:49)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest.creteOrgwithDD(CreateOrganisationWithIndTypeTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,12 +71,147 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="as()[pri:0, instance:testNG.pac.Report_Extent@24569dba]" started-at="2022-11-01T12:46:41 IST" name="as" finished-at="2022-11-01T12:46:42 IST" duration-ms="313" status="PASS">
+        </test-method> <!-- creteOrgwithDD -->
+        <test-method is-config="true" signature="logoutfromApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest@305ffe9e]" started-at="2022-11-01T16:19:18 IST" name="logoutfromApp" finished-at="2022-11-01T16:19:24 IST" duration-ms="5639" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- as -->
-      </class> <!-- testNG.pac.Report_Extent -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- logoutfromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest@305ffe9e]" started-at="2022-11-01T16:19:24 IST" name="closeBrowser" finished-at="2022-11-01T16:19:24 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.VTiger.TestCases_Final.CreateOrganisationWithIndTypeTest -->
+      <class name="com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest">
+        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:16:54 IST" name="dataBaseConnection" finished-at="2022-11-01T16:16:55 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataBaseConnection -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:16:55 IST" name="launchBrowser" finished-at="2022-11-01T16:17:03 IST" duration-ms="7533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:17:03 IST" name="logintoApp" finished-at="2022-11-01T16:17:10 IST" duration-ms="7381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApp -->
+        <test-method signature="createContactWithOrg()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:17:10 IST" name="createContactWithOrg" finished-at="2022-11-01T16:17:42 IST" duration-ms="32237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrg -->
+        <test-method is-config="true" signature="logoutfromApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:17:42 IST" name="logoutfromApp" finished-at="2022-11-01T16:17:48 IST" duration-ms="5928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:17:48 IST" name="closeBrowser" finished-at="2022-11-01T16:17:49 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="disConnectDatavbase()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest@2b30a42c]" started-at="2022-11-01T16:19:26 IST" name="disConnectDatavbase" finished-at="2022-11-01T16:19:26 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectDatavbase -->
+      </class> <!-- com.crm.VTiger.TestCases_Final.CreateContactWithOrgNameTest -->
+      <class name="com.crm.VTiger.TestCases_Final.CreateOrganisationTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@514646ef]" started-at="2022-11-01T16:17:49 IST" name="launchBrowser" finished-at="2022-11-01T16:17:53 IST" duration-ms="4073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="logintoApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@514646ef]" started-at="2022-11-01T16:17:53 IST" name="logintoApp" finished-at="2022-11-01T16:18:01 IST" duration-ms="7804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApp -->
+        <test-method signature="createOrgTest()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@514646ef]" started-at="2022-11-01T16:18:01 IST" name="createOrgTest" finished-at="2022-11-01T16:18:18 IST" duration-ms="17755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="logoutfromApp()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@514646ef]" started-at="2022-11-01T16:18:18 IST" name="logoutfromApp" finished-at="2022-11-01T16:18:37 IST" duration-ms="18923" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=106.0.5249.121)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'TYSS-PAVAN', ip: '192.168.60.189', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6747a4b92ca10b70b8176bfc33dcc25, clickElement {id=fe4691e9-d1ab-4f23-b9c3-e256081f6788}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.121, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Pavan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59556/devtoo..., se:cdpVersion: 106.0.5249.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e6747a4b92ca10b70b8176bfc33dcc25)] -> xpath: //a[text()='Sign Out']]
+Session ID: e6747a4b92ca10b70b8176bfc33dcc25]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=106.0.5249.121)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'TYSS-PAVAN', ip: '192.168.60.189', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6747a4b92ca10b70b8176bfc33dcc25, clickElement {id=fe4691e9-d1ab-4f23-b9c3-e256081f6788}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.121, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Pavan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59556/devtoo..., se:cdpVersion: 106.0.5249.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e6747a4b92ca10b70b8176bfc33dcc25)] -> xpath: //a[text()='Sign Out']]
+Session ID: e6747a4b92ca10b70b8176bfc33dcc25
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy21.click(Unknown Source)
+at ObjectRepository.HomePageClass.signOut(HomePageClass.java:51)
+at genericUtility.BaseClass.logoutfromApp(BaseClass.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutfromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.VTiger.TestCases_Final.CreateOrganisationTest@514646ef]" started-at="2022-11-01T16:18:37 IST" name="closeBrowser" finished-at="2022-11-01T16:18:37 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.VTiger.TestCases_Final.CreateOrganisationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
